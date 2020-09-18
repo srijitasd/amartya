@@ -1,13 +1,28 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+body {
 }
 
 h2 {
   font-family: "Dancing Script", cursive;
   font-size: 3rem;
   color: rgb(247, 235, 214);
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 3.5rem;
+  color: rgb(247, 235, 214);
+}
+
+p {
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+  color: rgb(247, 235, 214);
+  text-align: justify;
 }
 
 header {
@@ -18,12 +33,19 @@ header {
 }
 
 @media only screen and (max-width: 470px) {
+  h1 {
+    font-size: 2.1rem;
+  }
   h2 {
     font-size: 1.7rem;
+  }
+  p {
+    font-size: 1.4rem;
   }
 }
 
 .header-div {
+  box-sizing: border-box;
   padding: 1rem 2rem;
   background-color: #438fba;
   display: flex;
@@ -39,16 +61,17 @@ header {
 }
 
 .header-div > h2 {
+  font-size: 1.5rem;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   flex: 2;
 }
 
 .header-div > button {
   font-family: "Dancing Script", cursive;
-  font-size: 1.4rem;
-  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  padding: 0rem 2rem;
   background: #6872ce;
-  border: 3px solid #ffffff;
+  border: 2px solid #ffffff;
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.4);
   border-radius: 1.5rem;
   color: rgb(247, 235, 214);
@@ -68,18 +91,20 @@ header {
 }
 
 .landing-div {
-  background-image: url(images/blurry.jpeg);
+  background-image: url(images/blurry.jpg);
   background-size: cover;
   background-size: 100vw 100%;
   height: 100%;
   width: 100vw;
   filter: contrast(1.5);
   display: grid;
+  border-bottom: 5px solid #6872ce;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 @media only screen and (max-width: 470px) {
   .landing-div {
-    background-image: url(images/Sneha-cover.jpeg);
+    background-image: url(images/Sneha-cover.jpg);
   }
 }
 
@@ -111,4 +136,53 @@ header {
     text-shadow: 0px 5px 10px rgba(0, 0, 0, 1);
     padding: 3rem;
   }
+}
+
+.initial-wish {
+  margin-top: 2rem;
+  padding: 0rem 5rem;
+  margin-bottom: 5rem;
+}
+
+@media only screen and (max-width: 470px) {
+  .initial-wish {
+    padding: 0rem 3rem;
+  }
+}
+
+.initial-wish > h1 {
+  color: black;
+  width: fit-content;
+  margin: auto;
+  padding-bottom: 0.1rem;
+  border-bottom: 0.2rem solid #6872ce;
+}
+
+.initial-wish > p {
+  color: black;
+  padding-top: 3rem;
+}
+
+@media only screen and (max-width: 470px) {
+  .initial-wish > p {
+    padding-top: 2rem;
+  }
+}
+
+.img-gallery {
+  height: auto;
+  width: 100%;
+  column-count: 2;
+  box-sizing: border-box;
+  background-image: url(images/Sky-background.svg);
+  column-gap: 0.5rem;
+  padding: 3rem 1rem;
+}
+
+.img-gallery img {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin-bottom: 0.5rem;
+  display: block;
 }
