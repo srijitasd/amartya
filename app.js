@@ -1,3 +1,7 @@
+$(window).on("load", function () {
+  $(".preloader").fadeOut(1000);
+});
+
 const playButton = document.getElementById("playButton");
 
 playButton.addEventListener("click", play);
