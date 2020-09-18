@@ -182,17 +182,31 @@ header {
 .img-gallery {
   height: auto;
   width: 100%;
-  column-count: 2;
+  column-count: 3;
   box-sizing: border-box;
   background-image: url(images/Sky-background.svg);
   column-gap: 0.5rem;
-  padding: 3rem 1rem;
+  padding: 5rem 2rem;
 }
 
-.img-gallery img {
+@media only screen and (max-width: 470px) {
+  .img-gallery {
+    column-count: 2;
+    padding: 3rem 1rem;
+  }
+}
+
+.img-gallery > img {
   width: 100%;
   height: auto;
   box-sizing: border-box;
   margin-bottom: 0.5rem;
   display: block;
+  border: 1rem solid #6872ce;
+}
+
+@media only screen and (max-width: 470px) {
+  .img-gallery > img {
+    border: 0.5rem solid wheat;
+  }
 }
