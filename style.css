@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+hr {
+  width: 80%;
+  margin: auto;
+}
+
 .preloader {
   height: 100vh;
   width: 100%;
@@ -49,6 +54,12 @@ h2 {
   color: rgb(247, 235, 214);
 }
 
+h3 {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.8rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+
 h1 {
   font-family: "Dancing Script", cursive;
   font-size: 3.5rem;
@@ -75,6 +86,9 @@ header {
   }
   h2 {
     font-size: 1.7rem;
+  }
+  h3 {
+    font-size: 1.5rem;
   }
   p {
     font-size: 1.4rem;
@@ -194,6 +208,7 @@ header {
 @media only screen and (max-width: 470px) {
   .initial-wish {
     padding: 0rem 3rem;
+    margin-bottom: 3rem;
   }
 }
 
@@ -216,6 +231,66 @@ header {
   }
 }
 
+.tiles {
+  display: grid;
+  grid-template-rows: 4fr auto;
+  box-sizing: border-box;
+  padding: 1rem;
+  grid-gap: 1.5rem;
+}
+
+.tile-type-1 {
+  margin-top: 2rem;
+}
+
+.tile-type-4 {
+  margin-bottom: 2rem;
+}
+
+.tiles > img {
+  height: auto;
+  width: 50%;
+  border: 10px solid #6872ce;
+  align-self: center;
+  justify-self: center;
+}
+
+.tiles > p {
+  padding: 1rem 2rem;
+  color: rgba(0, 0, 0, 0.9);
+  background-color: rgb(253, 241, 203, 0.6);
+  border-radius: 2rem;
+  text-align: center;
+}
+
+.last-wish {
+  margin-top: 2rem;
+  display: grid;
+  padding: 2rem;
+  background-color: #50ade2;
+  margin-bottom: 0.5rem;
+}
+
+.last-wish > img {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1.5rem solid wheat;
+}
+
+.wish-sec > h1 {
+  color: rgba(0, 0, 0, 0.9);
+  border-bottom: 0.2rem solid black;
+  width: fit-content;
+  text-align: center;
+  margin: auto;
+}
+
+.wish-sec > p {
+  color: rgba(0, 0, 0, 0.9);
+  padding: 2rem;
+  text-align: center;
+}
+
 .img-gallery {
   height: auto;
   width: 100%;
@@ -230,6 +305,7 @@ header {
   .img-gallery {
     column-count: 2;
     padding: 3rem 1rem;
+    margin-top: 2rem;
   }
 }
 
@@ -246,4 +322,63 @@ header {
   .img-gallery > img {
     border: 0.5rem solid wheat;
   }
+}
+
+.tell {
+  display: grid;
+  padding: 2rem;
+  text-align: center;
+}
+.tell > h1,
+p {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.tell > h1 {
+  margin-bottom: 1rem;
+  border-bottom: 0.15rem solid rgba(0, 0, 0, 0.8);
+  width: fit-content;
+  margin: auto;
+}
+
+.tell > p {
+  margin-top: 2rem;
+  text-align: justify;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 420px) {
+  .tell > h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .tell > h1 {
+    font-size: 1.5rem;
+  }
+  .tell > p {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+  }
+}
+
+footer {
+  font-size: 1.8rem;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  padding: 1rem;
+  background-color: #ffefce;
+}
+
+footer > p {
+  text-align: center;
+}
+
+.fa-heart {
+  color: red;
+  margin: 0rem 0.5rem;
+  position: relative;
+  top: 0.3rem;
 }
